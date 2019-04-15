@@ -15,6 +15,11 @@ h3 {
   padding-bottom: 3%;
 }
 
+.name{
+  color:#7441FB;
+}
+
+
 p{
   font-family: 'Lato', sans-serif;
   letter-spacing: 0.01px;
@@ -110,14 +115,14 @@ button:focus {
 
 .pro, .custom{
   background: #7441FB;
-  border-top-left-radius: 16px !important;
-  border-top-right-radius: 16px !important;
+  border-top-left-radius: 1rem !important;
+  border-top-right-radius: 1rem !important;
 }
 
 .basic, .elite{
   background: #FF5F34;
-  border-top-left-radius: 16px !important;
-  border-top-right-radius: 16px !important;
+  border-top-left-radius: 1rem !important;
+  border-top-right-radius: 1rem !important;
 }
   
   .pricing .card {
@@ -125,10 +130,6 @@ button:focus {
     border-radius: 1rem;
     transition: all 0.2s;
     box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
-  }
-  
-  .pricing hr {
-    margin: 1.5rem 0;
   }
   
   .pricing .card-title {
@@ -151,3 +152,104 @@ button:focus {
     margin-bottom: 1rem;
   }
   /* price table */
+
+
+  /* case studies */
+  .cases .card {
+    border-radius: 1rem;
+    transition: all 0.2s;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+  }
+
+  .fa-clock, .fa-calendar, .fa-thumbs-up{
+    color:#7441FB;
+  }
+    /* case studies */
+
+/* testimonials */
+.carousel {
+  border-radius: 1rem;
+  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+  background: white; }
+
+  .carousel .carousel-item {
+    height: 300px; }
+  
+    .carousel .carousel-item img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      min-height: 300px; }
+
+#carouselButton {
+  right: 0px;
+  position: absolute;
+  bottom: 0px; }
+
+  .carousel-control-next-icon:before
+  {
+    content: '>';
+    font-size: 55px;
+    color: #7441FB;
+  }
+  
+  .carousel-control-prev-icon:after {
+    content: '<';
+    font-size: 55px;
+    color:#7441FB;
+  }
+
+.carousel, .carousel-item img{
+  min-height: 180px!important;
+}
+
+  .carousel-item img{
+
+    position: relative !important;
+    margin-top: -5%  !important;
+    width: 5% !important;
+    display: block  !important;
+    margin: 0 auto !important;
+  }
+ /* testimonials */ 
+  
+
+ /* FAQs */
+ .right{
+   float: right;
+ }
+
+  .panel-group .panel {
+    border-radius: 0;
+    box-shadow: none;
+    border-color: #EEEEEE;
+}
+
+.panel-default > .panel-heading {
+    padding: 0;
+    border-radius: 0;
+    color: #212121;
+    background-color: #FAFAFA;
+    border-color: #EEEEEE;
+}
+
+.panel-title {
+    font-size: 14px;
+}
+
+.panel-title > a {
+  color: #7441FB;
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+}
+
+.more-less {
+    float: right;
+    color: #212121;
+}
+
+.panel-default > .panel-heading + .panel-collapse > .panel-body {
+    border-top-color: #EEEEEE;
+}
+ /* FAQs */
