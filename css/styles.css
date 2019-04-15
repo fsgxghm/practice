@@ -1,6 +1,7 @@
 body {
   font-family: 'Montserrat', sans-serif;
   font-family: 'Lato', sans-serif;
+  color:#1E1F22;
 }
 
 h2 {
@@ -14,10 +15,10 @@ h3 {
   padding-bottom: 3%;
 }
 
-
 p{
   font-family: 'Lato', sans-serif;
   letter-spacing: 0.01px;
+  color:#1E1F22;
 }
 
 img {
@@ -37,23 +38,90 @@ img {
   background: transparent;
 }
 
-.primary-btn{
-  background-color: #ddd;
-  border: none;
-  color: black;
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 16px;
+button:focus {
+  outline:none !important;
+  box-shadow: none !important;
 }
 
+.primary-btn{
+  background-color: #7441FB;
+  border: none;
+  color: white;
+  padding: 12px 20px;
+  text-align: center;
+  display: inline-block;
+  margin: 8px 1.2em;
+  cursor: pointer;
+  border-radius: 20px;
+}
+.primary-btn:hover{
+  position: relative; 
+  top: -5px;
+  background-color: #7441FB;
+  box-shadow: 0px 3px 5px #7441FB;
+}
+
+.secondary-btn{
+  padding: 10px 20px;
+  text-align: center;
+  color: #7441FB;
+  border-radius: 20px;
+  border: 2px solid #7441FB;
+}
+
+.secondary-btn:hover{
+  background-color: #7441FB;
+  padding: 10px 20px;
+  text-align: center;
+  color: white;
+  border-radius: 20px;
+  border: 2px solid #7441FB;
+}
+
+.goal{
+  margin-left: 25%;
+}
+
+.goal li{
+  list-style: none;
+  margin-bottom: 2%;
+}
+
+.goal li:first-child {
+  margin-top:28%;
+}
+
+.goal li::before {
+  content: "•"; 
+  color:#7441FB;
+  display: inline-block; width: 1em;
+}
+
+.fa-check{
+  color:#3AE1A4;
+}
+
+.fa-times{
+  color:#FA594F;
+}
+
+
 /* price table */
+
+.pro, .custom{
+  background: #7441FB;
+  border-top-left-radius: 16px !important;
+  border-top-right-radius: 16px !important;
+}
+
+.basic, .elite{
+  background: #FF5F34;
+  border-top-left-radius: 16px !important;
+  border-top-right-radius: 16px !important;
+}
   
   .pricing .card {
-    border: none;
+    border:none;
     border-radius: 1rem;
     transition: all 0.2s;
     box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
