@@ -31,16 +31,16 @@
     <nav class="navbar navbar-light navbar-expand-sm bg-white fixed-top">
         <div class="container">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
-                <span class="navbar-toggler-icon"></span>`
+                <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="Navbar">
                 <a class=" navbar-brand " href=" #"><img class="img-rounded logo" src="./img/unation-logo.jpg"></a>
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active text-uppercase"><a class="nav-link" href="#">choose
                             package</a></li>
-                    <li class="nav-item text-uppercase"><a class="nav-link" href="./aboutus.html">case
+                    <li class="nav-item text-uppercase"><a class="nav-link" href="#">case
                             studies</a></li>
-                    <li class="nav-item text-uppercase"><a class="nav-link" href="./contactus.html">Contact</a></li>
+                    <li class="nav-item text-uppercase"><a class="nav-link" href="#">Contact us</a></li>
                 </ul>
             </div>
         </div>
@@ -67,7 +67,7 @@
         <div class="row row-header">
             <div class="col-12 text-center">
                 <h2>HOW IT WORK</h2>
-                <img style="width:5%" src="img/divider.svg">
+                <img class="divider-width" src="img/divider.svg">
             </div>
             <div class="container">
                 <div class="row">
@@ -95,7 +95,7 @@
                     <div class="row row-header">
                         <div class="col-12 text-center">
                             <h2>WHAT'S YOUR GOAL?</h2>
-                            <img style="width:5%" src="img/divider.svg">
+                            <img class="divider-width" src="img/divider.svg">
                         </div>
                     </div>
                 </div>
@@ -109,7 +109,7 @@
                             <li> Get more RSVP’s?</li>
                             <img class="mt-3" style="width:46%" src=" img/we-can-help.svg">
                         </ul>
-                        <img class="mt-4 mx-auto d-block" style="width:10%" src=" img/arrow.svg">
+                        <img class="mt-4 mx-auto d-block arrow" style="width:10% " src=" img/arrow.svg">
                     </div>
                     <div class="col-xs-12 col-sm-6">
                         <img src="img/service.svg">
@@ -121,7 +121,7 @@
                 <div class="row ">
                     <div class="col-12 text-center">
                         <h2>PICK YOUR PACKAGE</h2>
-                        <img style="width:5%" src="img/divider.svg">
+                        <img class="divider-width" src="img/divider.svg">
                     </div>
                 </div>
             </div>
@@ -272,7 +272,7 @@
                 <div class="row ">
                     <div class="col-12 text-center">
                         <h2>PICK YOUR PACKAGE</h2>
-                        <img style="width:5%" src="img/divider.svg">
+                        <img class="divider-width" src="img/divider.svg">
                     </div>
                 </div>
             </div>
@@ -350,7 +350,7 @@
                     <div class="row ">
                         <div class="col-12 text-center mb-5">
                             <h2 class="text-uppercase">testimonial</h2>
-                            <img style="width:5%" src="img/divider.svg">
+                            <img class="divider-width" src="img/divider.svg">
                         </div>
                     </div>
                 </div>
@@ -405,30 +405,30 @@
                 </div>
             </section>
 
-            <section class="accordin-section">
+            <section class="accordin-section  mb-5 pb-5">
                 <div class="container pt-5 mt-5">
                     <div class="row ">
                         <div class="col-12 text-center mb-5">
                             <h2>FAQs</h2>
-                            <img style="width:5%" src="img/divider.svg">
+                            <img class="divider-width" src="img/divider.svg">
                         </div>
                     </div>
                 </div>
 
-                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-
-                    <div class="panel panel-default" id="panel-faq">
-                        <div class="panel-heading" role="tab" id="panel-heading">
-                            <h4 class="panel-title">
-                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne"
+                <!-- panel-group -->
+                <div id="accordion">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne"
                                     aria-expanded="true" aria-controls="collapseOne">
                                     How do UNATION promotions work?
-                                    <span><i class="fas fa-plus right"></i></span>
-                                </a>
-                            </h4>
+                                </button>
+                            </h5>
                         </div>
-                        <div id="collapseOne" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingOne">
-                            <div class="pl-3 panel-body col-xs-12 ">
+
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                            <div class="card-body">
                                 It’s really quite simple. First, you create a FREE UNATION account. You can do that by
                                 downloading the Mobile App and joining here, or you can join through the web here.
                                 Second, create an event by tapping on the “+” icon on the bottom of the Mobile App or
@@ -444,88 +444,147 @@
                                 event by targeting the perfect audience. It’s that simple; join create, buy, and we’ll
                                 do the rest.
                                 <br>
-                                <strong>*NOTE: If you would like help with your event theme or details, please make a
-                                    note when
-                                    adding more details about your event after you’ve purchased your package.</strong>
+                                <br>
+                                *NOTE: If you would like help with your event theme or details, please make a note when
+                                adding more details about your event after you’ve purchased your package.
                             </div>
                         </div>
                     </div>
-
-                    <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="headingTwo">
-                            <h4 class="panel-title">
-                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <h5 class="mb-0 card-title">
+                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
                                     aria-expanded="false" aria-controls="collapseTwo">
-                                    <i class="more-less glyphicon glyphicon-plus"></i>
-                                    Collapsible Group Item #2
-                                </a>
-                            </h4>
+                                    Does my event have to be entered in UNATION in order to be promoted?
+                                </button>
+                            </h5>
                         </div>
-                        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-                            <div class="panel-body">
-                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson
-                                ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck
-                                quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on
-                                it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
-                                helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan
-                                excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
-                                aesthetic synth nesciunt you probably haven't heard of them accusamus labore
-                                sustainable VHS.
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                            <div class="card-body">
+                                Yes, all promoted events must be entered in the UNATION app prior to promotion. If you
+                                have questions on how to create an event on the UNATION Desktop App, you can tap here.
+                                For questions on how to create an event on the UNATION Mobile App, you can tap here.
                             </div>
                         </div>
                     </div>
-
-                    <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="headingThree">
-                            <h4 class="panel-title">
-                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree"
+                    <div class="card card-text">
+                        <div class="card-header" id="headingThree">
+                            <h5 class="mb-0 card-text">
+                                <button class="btn btn-link collapsed  card-text" data-toggle="collapse" data-target="#collapseThree"
                                     aria-expanded="false" aria-controls="collapseThree">
-                                    <i class="more-less glyphicon glyphicon-plus"></i>
-                                    Collapsible Group Item #3
-                                </a>
-                            </h4>
+                                    What information do I have to provide for my promotion?
+                                </button>
+                            </h5>
                         </div>
-                        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-                            <div class="panel-body">
-                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson
-                                ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck
-                                quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on
-                                it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
-                                helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan
-                                excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
-                                aesthetic synth nesciunt you probably haven't heard of them accusamus labore
-                                sustainable VHS.
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                            <div class="card-body">
+                                Yes, all promoted events must be entered in the UNATION app prior to promotion. If you
+                                have questions on how to create an event on the UNATION Desktop App, you can tap here.
+                                For questions on how to create an event on the UNATION Mobile App, you can tap here.
                             </div>
                         </div>
                     </div>
-
-                </div><!-- panel-group -->
-
+                    <div class="card">
+                        <div class="card-header" id="headingFour">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour"
+                                    aria-expanded="false" aria-controls="collapseFour">
+                                    What’s a Staff Pick or Featured Event?
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                            <div class="card-body">
+                                A ‘Staff Pick’ is an event that we believe our users should see front and center in the
+                                Discover feed on the mobile app and on the landing page at UNATION.com. If your event
+                                is Staff Picked, it will proudly display our UNATION icon – a stamp of approval only a
+                                few events can boast.
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
 
-            <hr>
             <footer>
+                <section id="footer" class="mt-3 ">
+                    <div class="container">
+                        <div class="row text-center text-xs-center text-sm-left text-md-left">
+                            <div class="col-xs-12 col-sm-4 col-md-4">
+                                <h5>Quick links</h5>
+                                <ul class="list-unstyled quick-links">
+                                    <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Home</a></li>
+                                    <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>About</a></li>
+                                    <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
+                                    <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Get
+                                            Started</a></li>
+                                    <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Videos</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-xs-12 col-sm-4 col-md-4">
+                                <h5>Quick links</h5>
+                                <ul class="list-unstyled quick-links">
+                                    <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Home</a></li>
+                                    <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>About</a></li>
+                                    <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
+                                    <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Get
+                                            Started</a></li>
+                                    <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Videos</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-xs-12 col-sm-4 col-md-4">
+                                <h5>Quick links</h5>
+                                <ul class="list-unstyled quick-links">
+                                    <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Home</a></li>
+                                    <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>About</a></li>
+                                    <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
+                                    <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Get
+                                            Started</a></li>
+                                    <li><a href="https://wwwe.sunlimetech.com" title="Design and developed by"><i class="fa fa-angle-double-right"></i>Imprint</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+                                <ul class="list-unstyled list-inline social text-center">
+                                    <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-facebook"></i></a></li>
+                                    <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-twitter"></i></a></li>
+                                    <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-instagram"></i></a></li>
+                                    <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-google-plus"></i></a></li>
+                                    <li class="list-inline-item"><a href="javascript:void();" target="_blank"><i class="fa fa-envelope"></i></a></li>
+                                </ul>
+                            </div>
+                            </hr>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+                                <p class="h6">&copy All right Reversed.<a class="text-green ml-2" href="https://www.sunlimetech.com"
+                                        target="_blank">UNATION</a></p>
+                            </div>
+                            </hr>
+                        </div>
+                    </div>
+        </div>
+        </section>
+        </footer>
+        <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+        <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+        <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="https://unpkg.com/vanilla-back-to-top@7.2.0/dist/vanilla-back-to-top.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
 
-            </footer>
-            <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
-            <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-            <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-            <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-            <script src="https://unpkg.com/vanilla-back-to-top@7.2.0/dist/vanilla-back-to-top.min.js"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
-            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-                crossorigin="anonymous"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-                crossorigin="anonymous"></script>
-            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-                crossorigin="anonymous"></script>
-
-            <script src="./js/script.js"></script>
-            <script>addBackToTop({
-                    diameter: 56,
-                    backgroundColor: '#7441FB',
-                    textColor: '#fff'
-                })</script>
+        <script src="./js/script.js"></script>
+        <script>addBackToTop({
+                diameter: 56,
+                backgroundColor: '#7441FB',
+                textColor: '#fff'
+            })</script>
 </body>
 
 </html>
