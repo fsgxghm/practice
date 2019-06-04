@@ -24,12 +24,12 @@
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
     <link href="./css/styles.css" rel="stylesheet">
     <!-- endbuild -->
-    <title>Front-end Development Practice</title>
-    <title>Boobstrap practice</title>
+    <title>Front-end Development Practice - Marketing Website</title>
 </head>
 
 <body link="black">
-    <nav class="navbar navbar-light navbar-expand-sm bg-white fixed-top">
+    <header class="jumbotron jumbotron-fluid"  role="banner">
+    <nav class="navbar navbar-light navbar-expand-sm bg-white fixed-top" role="navigation">
         <div class="container">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
                 <span class="navbar-toggler-icon"></span>
@@ -46,13 +46,15 @@
             </div>
         </div>
     </nav>
+</header>
 
 
-    <header class="jumbotron jumbotron-fluid">
+<div class="site-content">
+    <main role="main">
         <div class="container container-fluid ">
             <div class="row row-header">
                 <div class="col-12 text-center">
-                    <h1 class="text-center pt-5 mt-5 pb-4" style="font-family:Montserrat">Promoting your event
+                    <h1 class="text-center pt-3 pb-4" style="font-family:Montserrat">Promoting your event
                         has never been easier.</h1>
                     <button type="button" class="btn btn-sm primary-btn font-weight-bold text-uppercase ">CHOOSE
                         PACKAGE</button>
@@ -62,11 +64,10 @@
             </div>
         </div>
         <img src="img/hero.svg">
-    </header>
 
     <div class="container">
         <div class="row row-header">
-            <div class="col-12 text-center">
+            <div class="col-12 pt-5 mt-2 text-center">
                 <h2>HOW IT WORK</h2>
                 <img class="divider-width" src="img/divider.svg">
             </div>
@@ -505,8 +506,12 @@
                     </div>
                 </div>
             </section>
-
-            <footer>
+</div>
+        </div>
+    </div>
+    </main>
+</div>
+            <footer role="contentInfo">
                 <section id="footer" class="mt-3 ">
                     <div class="container">
                         <div class="row text-center text-xs-center text-sm-left text-md-left">
@@ -564,8 +569,8 @@
                             </hr>
                         </div>
                     </div>
-        </div>
         </section>
+
         </footer>
         <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
         <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
